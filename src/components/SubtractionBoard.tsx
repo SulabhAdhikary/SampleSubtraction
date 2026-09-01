@@ -313,7 +313,7 @@ export const SubtractionBoard: React.FC<SubtractionBoardProps> = ({
                       transition={{ repeat: Infinity, duration: 1.2 }}
                       className="absolute -top-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-md whitespace-nowrap"
                     >
-                      Borrow Here!
+                      Borrow From!
                     </motion.div>
                   )}
                 </div>
@@ -357,7 +357,7 @@ export const SubtractionBoard: React.FC<SubtractionBoardProps> = ({
                     transition={{ repeat: Infinity, duration: 1.2 }}
                     className="absolute -top-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-md whitespace-nowrap"
                   >
-                    Borrow Here!
+                    Borrow From!
                   </motion.div>
                 )}
               </div>
