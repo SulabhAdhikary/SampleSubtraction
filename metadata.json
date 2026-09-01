@@ -1,0 +1,6 @@
+{
+  "name": "Step-by-Step Regrouping Subtraction",
+  "description": "Interactive step-by-step subtraction learning tool with guided regrouping (borrowing), state-locked input stages, base-10 visualizer, and animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
