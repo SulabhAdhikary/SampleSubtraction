@@ -372,7 +372,7 @@ export default function App() {
         />
 
         {/* Two-Column Responsive Grid */}
-        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-start justify-center">
+        <div className="w-full max-w-xl bg-white/95 border border-indigo-100 rounded-3xl p-3 sm:p-4 shadow-md shadow-indigo-100/40 mb-4">
           {/* LEFT COLUMN: Subtraction Board & Input Keypad (7 cols on desktop) */}
           <div className="lg:col-span-7 flex flex-col items-center gap-4">
             <SubtractionBoard
@@ -416,55 +416,9 @@ export default function App() {
               isFinished={isFinished}
             />
 
-            {/* Auto-Demo Helper Banner */}
-            {/* <div className="bg-white/95 border border-indigo-100 rounded-2xl p-3 shadow-md shadow-indigo-100/30 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-slate-800">Auto-Solve Demo</span>
-                <span className="text-[11px] text-slate-500 font-medium">Watch the steps solved automatically</span>
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsAutoDemo(!isAutoDemo)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer ${
-                  isAutoDemo
-                    ? 'bg-rose-500 hover:bg-rose-600 text-white shadow-rose-200'
-                    : 'bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200'
-                }`}
-              >
-                {isAutoDemo ? (
-                  <>
-                    <Pause className="w-3.5 h-3.5" />
-                    <span>Pause Demo</span>
-                  </>
-                ) : (
-                  <>
-                    <Play className="w-3.5 h-3.5 text-indigo-600" />
-                    <span>Play Demo</span>
-                  </>
-                )}
-              </button>
-            </div> */}
+          
 
-            {/* Base-10 Visual Manipulatives Mat */}
-            {/* {showManipulatives && (
-              <Base10Manipulatives
-                topNumber={topNumber}
-                bottomNumber={bottomNumber}
-                currentStepIndex={currentStepIndex}
-                activeColumn={currentStep.column}
-                unbundleInfo={unbundleInfo}
-                hundredsCount={hundredsCount}
-                tensCount={tensCount}
-                onesCount={onesCount}
-                is3Digit={is3Digit}
-                onesAnswerSubmitted={!!answerOnes}
-                tensAnswerSubmitted={!!answerTens}
-                hundredsAnswerSubmitted={!!answerHundreds}
-                onesSubtrahend={onesSubtrahend}
-                tensSubtrahend={tensSubtrahend}
-                hundredsSubtrahend={hundredsSubtrahend}
-              />
-            )} */}
+            
           </div>
         </div>
       </main>
